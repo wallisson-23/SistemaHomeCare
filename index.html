@@ -7,9 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>iCare - Gestão de Home Care</title>
 
+
     <!-- Stylesheet -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="imagens/iCareicone.png" type="image/x-icon">
 </head>
 
 <body>
@@ -19,8 +23,7 @@
         <nav class="navbar">
             <div class="navbar-container">
                 <div class="logo">
-                    <a href="#"><img src="imagens/logoiCare.jpg" alt="Logo iCare"
-                            style="max-width: 120px; margin-top: 5px;"></a>
+                    <img src="imagens/Logo iCare.png" alt="Logo iCare" >
                 </div>
                 <ul class="nav-links" aria-label="Navegação principal">
                     <li><a href="#home">Início</a></li>
@@ -51,7 +54,7 @@
                         <!-- <label for="email-header" class="sr-only">Insira seu e-mail</label> -->
                         <!-- <input type="email" id="email-header" placeholder="Insira seu e-mail"
                             aria-label="Campo de e-mail"> -->
-                       <a href="#contact"> <button class="cta-btn">Iniciar Avaliação</button></a>
+                        <a href="#contact"> <button class="cta-btn">Iniciar Avaliação</button></a>
                     </div>
                 </div>
                 <!-- Imagens -->
@@ -82,98 +85,105 @@
                         <li>Automação de tarefas e acesso a relatórios</li>
                     </ul>
 
-                   <a href="#contact"><button class="cta-btn">Fale conosco!</button></a> 
+                    <a href="#contact"><button class="cta-btn">Fale conosco!</button></a>
                 </div>
                 <div class="sobre-image">
-                    <img src="vecteezy_man-nurse-holding-clipboard-healthcare-workers-concept_31718397.png"
-                        alt="Imagem ilustrativa de Home Care">
+                    <img src="imagens/imagsobre.png" alt="Imagem ilustrativa de Home Care">
                 </div>
             </div>
         </section>
 
 
+        
         <!-- Seção de Funcionalidades Alternadas -->
-        <section id="funcionalidades-alternadas" class="features-section">
+        <section id="funcionalidades-alternadas" class="features-section py-5">
             <div class="container">
-                <h2>Serviços</h2>
+                <h2 class="text-center mb-5">Serviços</h2>
 
-                <!-- Funcionalidade 1 -->
-                <div class="feature-item alternate-left">
-                    <div class="text-content">
-                        <h3>Facilidade em Gestão de Escalas dos Profissionais</h3>
-                        <p>Gerencie de forma eficiente as escalas dos seus profissionais, mantendo tudo organizado e
-                            acessível.</p>
+                <div class="row">
+                    <!-- Funcionalidade 1 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="imagens/gestao (1).png" alt="Gestão de Escalas">
+                            <div class="card-body">
+                                <h5 class="card-title">Facilidade em Gestão de Escalas dos Profissionais</h5>
+                                <p class="card-text">Gerencie de forma eficiente as escalas dos seus profissionais,
+                                    mantendo tudo organizado e acessível.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="image-content">
-                        <img src="imagens/gestão de escalas.jpg" alt="Gestão de Escalas">
+
+                    <!-- Funcionalidade 2 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top"
+                                src="https://img.icons8.com/ios-filled/150/000000/medical-doctor.png"
+                                alt="Informações de Saúde">
+                            <div class="card-body">
+                                <h5 class="card-title">Compartilhar Informações de Saúde do Paciente</h5>
+                                <p class="card-text">Mantenha as informações de saúde dos pacientes acessíveis e
+                                    compartilháveis em tempo real.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Funcionalidade 3 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="imagens/acompanhamento.jpg"
+                                alt="Acompanhamento em Tempo Real">
+                            <div class="card-body">
+                                <h5 class="card-title">Acompanhamento em Tempo Real dos Dados</h5>
+                                <p class="card-text">Acompanhe o progresso dos pacientes e atualizações das informações
+                                    clínicas em tempo real.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Funcionalidade 2 -->
-                <div class="feature-item alternate-right">
-                    <div class="image-content">
-                        <img src="https://img.icons8.com/ios-filled/150/000000/medical-doctor.png"
-                            alt="Informações de Saúde">
+                <div class="row">
+                    <!-- Funcionalidade 4 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="https://img.icons8.com/ios-filled/150/000000/calendar.png"
+                                alt="Visualização de Agendamentos">
+                            <div class="card-body">
+                                <h5 class="card-title">Visualização de Agendamentos e Profissionais Alocados</h5>
+                                <p class="card-text">Veja de forma clara os agendamentos e a alocação de profissionais
+                                    em um só lugar.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="text-content">
-                        <h3>Compartilhar Informações de Saúde do Paciente</h3>
-                        <p>Mantenha as informações de saúde dos pacientes acessíveis e compartilháveis em tempo real.
-                        </p>
-                    </div>
-                </div>
 
-                <!-- Funcionalidade 3 -->
-                <div class="feature-item alternate-left">
-                    <div class="text-content">
-                        <h3>Acompanhamento em Tempo Real dos Dados</h3>
-                        <p>Acompanhe o progresso dos pacientes e atualizações das informações clínicas em tempo real.
-                        </p>
+                    <!-- Funcionalidade 5 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="imagens/automacao (1).png" alt="Automatização de Processos">
+                            <div class="card-body">
+                                <h5 class="card-title">Automatização de Processos Manuais e Protocolos</h5>
+                                <p class="card-text">Automatize processos como protocolos ABEMID e NEAD, evoluções
+                                    clínicas e o plano terapêutico.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="image-content">
-                        <img src="imagens/acompanhamento.jpg"
-                            alt="Acompanhamento em Tempo Real">
-                    </div>
-                </div>
 
-                <!-- Funcionalidade 4 -->
-                <div class="feature-item alternate-right">
-                    <div class="image-content">
-                        <img src="https://img.icons8.com/ios-filled/150/000000/calendar.png"
-                            alt="Visualização de Agendamentos">
-                    </div>
-                    <div class="text-content">
-                        <h3>Visualização de Agendamentos e Profissionais Alocados</h3>
-                        <p>Veja de forma clara os agendamentos e a alocação de profissionais em um só lugar.</p>
-                    </div>
-                </div>
-
-                <!-- Funcionalidade 5 -->
-                <div class="feature-item alternate-left">
-                    <div class="text-content">
-                        <h3>Automatização de Processos Manuais e Protocolos</h3>
-                        <p>Automatize processos como protocolos ABEMID e NEAD, evoluções clínicas e o plano terapêutico.
-                        </p>
-                    </div>
-                    <div class="image-content">
-                        <img src="imagens/automatização.jpg"
-                            alt="Automatização de Processos">
-                    </div>
-                </div>
-
-                <!-- Funcionalidade 6 -->
-                <div class="feature-item alternate-right">
-                    <div class="image-content">
-                        <img src="https://img.icons8.com/ios-filled/150/000000/artificial-intelligence.png"
-                            alt="Inteligência Artificial Integrada">
-                    </div>
-                    <div class="text-content">
-                        <h3>Inteligência Artificial Integrada</h3>
-                        <p>Utilize inteligência artificial para otimizar o atendimento e os cuidados prestados aos
-                            pacientes.</p>
+                    <!-- Funcionalidade 6 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top"
+                                src="https://img.icons8.com/ios-filled/150/000000/artificial-intelligence.png"
+                                alt="Inteligência Artificial Integrada">
+                            <div class="card-body">
+                                <h5 class="card-title">Inteligência Artificial Integrada</h5>
+                                <p class="card-text">Utilize inteligência artificial para otimizar o atendimento e os
+                                    cuidados prestados aos pacientes.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
 
         <!-- Seção de Contato -->
         <section class="contact" id="contact">
@@ -216,11 +226,11 @@
 
     <!-- Rodapé -->
     <footer>
-        <div class="footer-links">
+        <!-- <div class="footer-links">
             <a href="#">Termos de Serviço</a>
             <a href="#">Política de Privacidade</a>
             <a href="#">Suporte</a>
-        </div>
+        </div> -->
         <!-- <div class="box-footer">
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-linkedin"></i></a>

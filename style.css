@@ -10,14 +10,17 @@ body {
     font-family: 'Arial', sans-serif;
     color: #333;
     background-color: #f9f9f9;
-    padding-top: 80px; /* Espaço para o navbar fixo */
+    padding-top: 80px;
+    /* Espaço para o navbar fixo */
 }
 
 /* Navbar fixo */
 .navbar {
-    background-color: #f9f9f9; /* Cor da navbar ajustada para combinar com o logo */
+    background-color: #f9f9f9;
+    /* Cor da navbar ajustada para combinar com o logo */
     padding: 10px 0;
-    border-bottom: 1px solid #eaeaea; /* Cor de borda para contraste */
+    border-bottom: 1px solid #eaeaea;
+    /* Cor de borda para contraste */
     position: fixed;
     top: 0;
     left: 0;
@@ -31,23 +34,27 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-height: 80px;
-    max-width: 1000px; /* Largura máxima reduzida para compactar */
-    margin: 0 auto;
+    max-height: 70px;
+    max-width: 1000px;
+    /* Largura máxima reduzida para compactar */
+    margin: 20px auto;
     padding: 0 15px;
 }
 
 .logo img {
+
     display: block;
-   width: 50%;
-   left: 50%;
+    width: 140px;
+    left: 140px;
     margin-top: 5px;
+    align-self: flex-start;
 }
 
 .nav-links {
     list-style-type: none;
     display: flex;
-    gap: 15px; /* Espaçamento ajustado */
+    gap: 15px;
+    /* Espaçamento ajustado */
     margin-left: 15px;
 }
 
@@ -57,16 +64,18 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #003366; 
+    color: #003366;
     font-weight: bold;
-    font-size: 14px;
-    padding: 8px 12px; /* Compactação dos links */
+    font-size: 16px;
+    padding: 8px 12px;
+    /* Compactação dos links */
     transition: color 0.3s ease;
 }
 
 
 .nav-links a:hover {
-    color: #ffcc00; /* Cor de hover mais clara */
+    color: #ffcc00;
+    /* Cor de hover mais clara */
 }
 
 .navbar-buttons {
@@ -88,11 +97,13 @@ body {
 }
 
 .login-btn:hover {
-    color: #ffcc00; /* Hover igual ao links */
+    color: #ffcc00;
+    /* Hover igual ao links */
 }
 
 .cta-btn {
-    background-color: #ffcc00; /* Botão CTA ajustado para contrastar com o fundo */
+    background-color: #ffcc00;
+    /* Botão CTA ajustado para contrastar com o fundo */
     color: #003366;
     padding: 8px 12px;
     border-radius: 25px;
@@ -114,36 +125,10 @@ main {
     margin-top: 40px;
 }
 
-/* Media Queries para responsividade */
-@media (max-width: 768px) {
-    .navbar-container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
-        align-items: flex-start;
-    }
-
-    .navbar-buttons {
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
-        align-items: flex-start;
-    }
-
-    .cta-btn, .login-btn {
-        width: 100%;
-        text-align: center;
-    }
-}
-
 /* Header */
 .header {
-    background: linear-gradient(to right, #e6f0ff, #ffffff); /* Cores suaves para harmonizar com o logo */
+    background: linear-gradient(to right, #e6f0ff, #ffffff);
+    /* Cores suaves para harmonizar com o logo */
     height: 80vh;
     display: flex;
     justify-content: center;
@@ -168,7 +153,8 @@ main {
 
 .header-content h1 {
     font-size: 3rem;
-    color: #003366; /* Azul escuro para o título */
+    color: #003366;
+    /* Azul escuro para o título */
     margin-bottom: 20px;
     font-weight: bold;
 }
@@ -246,7 +232,8 @@ main {
 
 /* Seção Sobre */
 .sobre {
-    background-color: #e6f0ff; /* Cor suave para manter harmonia com o logo */
+    background-color: #e6f0ff;
+    /* Cor suave para manter harmonia com o logo */
     padding: 60px 0;
     display: flex;
     justify-content: center;
@@ -266,12 +253,13 @@ main {
     flex: 1;
     text-align: start;
     padding-right: 20px;
-    
+
 }
 
 .sobre-text h2 {
     font-size: 2.5em;
-    color: #003366; /* Azul escuro para títulos */
+    color: #003366;
+    /* Azul escuro para títulos */
     margin-bottom: 20px;
 }
 
@@ -280,7 +268,7 @@ main {
     color: #333;
     margin-bottom: 20px;
     line-height: 1.6;
-    
+
 }
 
 .sobre-text ul {
@@ -299,17 +287,19 @@ main {
 
 .sobre-text ul li::before {
     content: "•";
-    color: #003366; /* Bullet point na cor azul escuro */
+    color: #003366;
+    /* Bullet point na cor azul escuro */
     position: absolute;
     left: -20px;
     top: 0;
 }
 
-.sobre-text .cta-btn  {
-    background-color: #003366; /* Botão CTA */
+.sobre-text .cta-btn {
+    background-color: #003366;
+    /* Botão CTA */
     color: #f9f9f9;
     padding: 12px 20px;
-    border-radius: 25px;
+    border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1em;
@@ -320,7 +310,7 @@ main {
 
 
 .sobre-text .cta-btn:hover {
-    background-color: #ffd633;
+    background-color: #003366;
 }
 
 .sobre-image {
@@ -334,136 +324,142 @@ main {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .sobre-container {
-        flex-direction: column;
-    }
 
-    .sobre-text {
-        text-align: center;
-        padding-right: 0;
-    }
-
-    .sobre-image {
-        margin-top: 20px;
-    }
+/* Seção de Funcionalidades */
+.features-section h2{
+    text-align: center;
 }
-
-/* Seção de Features */
 .features-section {
     background-color: #f9f9f9;
-    padding: 0px 0;
-    text-align: center;
+    padding: 50px 30px; /* Aumentando o padding lateral para 30px */
 }
 
 .features-section h2 {
-    font-size: 2.5em;
-    margin-bottom: 50px;
-    color: #003366;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 40px;
 }
 
-.feature-item {
+/* Grid de Cards */
+.row {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 60px;
-    text-align: left;
-    padding: 20px;
-    background-color: #ffffff;
+    gap: 30px; /* Aumentando o espaçamento entre os cards */
+    margin-bottom: 30px; /* Adicionando espaçamento entre linhas de cards */
+}
+
+/* Cada card ocupa 1/3 da largura da row */
+.col-md-4 {
+    flex: 0 0 calc(33.333% - 20px); /* Ajustando a largura para 33.3% com espaço */
+}
+
+/* Cards */
+.card {
+    background-color: #fff;
+    border: none;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.feature-item .text-content {
-    flex: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 30px; /* Aumentando espaço entre cards superiores e inferiores */
 }
 
-.feature-item .text-content h3 {
-    font-size: 1.8em;
-    margin-bottom: 15px;
-    color: #003366;
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
-.feature-item .text-content p {
-    font-size: 1.2em;
-    color: #666;
+.card-img-top {
+    width: 60px;
+    height: 60px;
+    margin: 20px auto;
+    display: block;
 }
 
-.feature-item .image-content {
-    flex: 1;
+.card-body {
     text-align: center;
+    padding: 10px 0;
 }
 
-.feature-item .image-content img {
-    max-width: 150px;
-    height: auto;
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 15px;
 }
 
-/* Alternar Layout */
-.alternate-left {
-    flex-direction: row;
+.card-text {
+    font-size: 1rem;
+    color: #6c757d;
 }
 
-.alternate-right {
-    flex-direction: row;
-}
-
-/* Responsividade */
+/* Responsividade: ajusta para 2 colunas em telas menores */
 @media (max-width: 768px) {
-    .feature-item {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .feature-item .text-content {
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    .feature-item .image-content {
-        margin-top: 20px;
+    .col-md-4 {
+        flex: 0 0 calc(50% - 20px); /* 50% da largura menos o espaçamento */
     }
 }
+
+/* Responsividade: ajusta para 1 coluna em telas pequenas */
+@media (max-width: 576px) {
+    .col-md-4 {
+        flex: 0 0 100%;
+    }
+}
+
+
 
 /* Contato */
 .contact-content {
     display: flex;
     align-items: center;
     justify-content: space-around;
-  }
-  .contact-info {
+}
+
+.contact-info {
     max-width: 500px;
-  }
-  .info-box {
+}
+
+.info-box {
     display: flex;
     align-items: center;
     margin: 1rem 0;
     color: #003366;
-  }
-  .info-box i {
+}
+
+.info-box i {
     font-size: 20px;
     color: #003366;
-  }
-  .info-box p {
+}
+
+.info-box p {
     margin-left: 1rem;
     font-weight: 400;
     font-size: 20px;
-  }
-  .social {
+}
+
+.social {
     display: flex;
     align-items: center;
-  }
-  .social a {
+}
+
+.social a {
     margin-right: 1rem;
-  }
-  form {
+}
+
+form {
     max-width: 360px;
     margin-top: 4rem;
-  }
-  form input,
-  form textarea {
+}
+
+form input,
+form textarea {
     width: 100%;
     font-size: 14px;
     padding: 1rem;
@@ -471,32 +467,38 @@ main {
     border: none;
     outline: none;
     margin-bottom: 12px;
-    background:  #003366;;
+    background: #003366;
+    ;
     color: #f9f9f9;
     border-bottom: 1px solid var(--primary);
-  }
-  form ::placeholder{
+}
+
+form ::placeholder {
     color: #f9f9f9;
-  }
-  form textarea {
+}
+
+form textarea {
     height: 200px;
     resize: none;
-  }
-  .contact h1{
+}
+
+.contact h1 {
     color: #003366;
     text-align: center;
     font-size: 32px;
-  }
-  .contact-button {
+}
+
+.contact-button {
     max-width: 100px;
     font-weight: 600;
     background: #ffd633;
-    color: #003366;;
+    color: #003366;
+    ;
     text-transform: uppercase;
     letter-spacing: 1px;
     cursor: pointer;
-  }
-  
+}
+
 
 /* Footer */
 footer {
@@ -515,6 +517,199 @@ footer a {
 footer a:hover {
     color: #ffd633;
 }
-.box-footer{
+
+.box-footer {
     color: #ffd633;
+}
+
+/* Para telas menores que 1024px */
+@media (max-width: 1024px) {
+    .navbar-container {
+        padding: 0 10px;
+    }
+
+    .header-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .header-content p {
+        font-size: 1rem;
+    }
+
+    .header-input input {
+        width: 250px;
+        padding: 10px;
+    }
+
+    .header-input button {
+        padding: 10px 15px;
+    }
+
+    .sobre-text h2 {
+        font-size: 2rem;
+    }
+
+    .sobre-text p {
+        font-size: 1.1rem;
+    }
+
+    .feature-item .text-content h3 {
+        font-size: 1.6rem;
+    }
+
+    .feature-item .text-content p {
+        font-size: 1rem;
+    }
+}
+
+/* Para telas menores que 768px */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .navbar-buttons {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .cta-btn,
+    .login-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-content {
+        padding: 0;
+    }
+
+    .header-images {
+        display: none;
+        /* Esconder imagens em telas pequenas */
+    }
+
+    .sobre-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .sobre-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .sobre-text p {
+        font-size: 1rem;
+    }
+
+    .sobre-image img {
+        max-width: 80%;
+    }
+
+    .features-section h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .feature-item {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .feature-item .image-content img {
+        max-width: 100px;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    form {
+        margin-top: 2rem;
+    }
+}
+
+/* Para telas menores que 480px */
+@media (max-width: 480px) {
+    .logo img {
+        max-width: 60px;
+        /* Reduzir ainda mais a logo */
+    }
+
+    .nav-links {
+        gap: 5px;
+        /* Menor espaçamento em telas menores */
+    }
+
+    .nav-links a {
+        font-size: 10px;
+        /* Reduzir ainda mais a fonte dos links */
+        padding: 5px 8px;
+    }
+}
+
+.navbar {
+    padding: 5px 0;
+    flex-direction: row;
+}
+
+.nav-links {
+    flex-flow: nowrap;
+}
+
+.navbar-container {
+    padding: 0 10px;
+}
+
+.header-content h1 {
+    font-size: 1.8rem;
+}
+
+.header-content p {
+    font-size: 0.9rem;
+}
+
+.header-input input {
+    width: 200px;
+    padding: 8px;
+}
+
+.header-input button {
+    padding: 8px 12px;
+}
+
+.sobre-text h2 {
+    font-size: 1.5rem;
+}
+
+.sobre-text p {
+    font-size: 0.9rem;
+}
+
+.feature-item .text-content h3 {
+    font-size: 1.4rem;
+}
+
+.feature-item .text-content p {
+    font-size: 0.9rem;
+}
+
+.footer {
+    padding: 15px;
+    font-size: 0.8rem;
 }
