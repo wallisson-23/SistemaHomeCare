@@ -1,64 +1,77 @@
 document.addEventListener('DOMContentLoaded', function () {
-  // Scroll suave ao clicar nos links da navbar
+  // Validação do Formulário de Contato
+  const contactForm = document.getElementById('contact-form');
+
+  contactForm.addEventListener('submit', function (event) {
+      event.preventDefault(); // Evitar envio automático para testes
+
+      const name = this.name.value.trim();
+      const email = this.email.value.trim();
+      const message = this.message.value.trim();
+
+      if (!name || !email || !message) {
+          alert('Por favor, preencha todos os campos.');
+      } else if (!validateEmail(email)) {
+          alert('Por favor, insira um e-mail válido.');
+      } else {
+          alert('Mensagem enviada com sucesso!');
+          // Aqui pode ser adicionado o código para enviar os dados para o backend
+          this.reset();
+      }
+  });
+
+  // Função para validar e-mail
+  function validateEmail(email) {
+      const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return regex.test(email);
+  }
+
+  // Navegação suave para âncoras de links
   const navLinks = document.querySelectorAll('.nav-links a');
+
   navLinks.forEach(link => {
       link.addEventListener('click', function (e) {
           e.preventDefault();
-          const targetId = link.getAttribute('href').substring(1);
-          const targetSection = document.getElementById(targetId);
-          window.scrollTo({
-              top: targetSection.offsetTop - 80,
-              behavior: 'smooth'
-          });
+          const targetID = this.getAttribute('href').substring(1);
+          const targetSection = document.getElementById(targetID);
+
+          if (targetSection) {
+              window.scrollTo({
+                  top: targetSection.offsetTop,
+                  behavior: 'smooth'
+              });
+          }
       });
   });
-  document.addEventListener('DOMContentLoaded', function () {
-    const track = document.querySelector('.carousel-track');
-    const slides = Array.from(track.children);
-    const nextButton = document.querySelector('.carousel-btn.next');
-    const prevButton = document.querySelector('.carousel-btn.prev');
-    const indicators = Array.from(document.querySelectorAll('.carousel-indicator'));
 
-    let currentSlide = 0;
-
-    const moveToSlide = (track, currentSlide, targetSlide) => {
-        track.style.transform = `translateX(-${targetSlide * 100}%)`;
-        indicators[currentSlide].classList.remove('active');
-        indicators[targetSlide].classList.add('active');
-    };
-
-    nextButton.addEventListener('click', () => {
-        const nextSlide = (currentSlide + 1) % slides.length;
-        moveToSlide(track, currentSlide, nextSlide);
-        currentSlide = nextSlide;
-    });
-
-    prevButton.addEventListener('click', () => {
-        const prevSlide = (currentSlide - 1 + slides.length) % slides.length;
-        moveToSlide(track, currentSlide, prevSlide);
-        currentSlide = prevSlide;
-    });
-
-    indicators.forEach((indicator, index) => {
-        indicator.addEventListener('click', () => {
-            moveToSlide(track, currentSlide, index);
-            currentSlide = index;
-        });
-    });
-});
-
-  // Validação de formulário de contato
-  const form = document.querySelector('.contact-form');
-  form.addEventListener('submit', function (e) {
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const message = document.getElementById('message').value;
-
-      if (!name || !email || !message) {
-          e.preventDefault();
-          alert('Por favor, preencha todos os campos.');
+  // Efeito de botão de "Iniciar Avaliação" no Header
+  const ctaButton = document.querySelector('.header .cta-btn');
+  ctaButton.addEventListener('click', function () {
+      const emailInput = document.getElementById('email-header').value.trim();
+      if (emailInput === '') {
+          alert('Por favor, insira seu e-mail para iniciar a avaliação.');
+      } else if (!validateEmail(emailInput)) {
+          alert('Por favor, insira um e-mail válido.');
       } else {
-          alert('Mensagem enviada com sucesso!');
+          alert('Avaliação iniciada! Verifique seu e-mail para mais detalhes.');
+          // Aqui você pode integrar com o backend para processar o e-mail
+      }
+  });
+  
+  // // Feedback ao clicar no botão "Conecte-se"
+  // const loginBtn = document.querySelector('.login-btn');
+  // loginBtn.addEventListener('click', function (e) {
+  //     e.preventDefault();
+  //     alert('Função de login ainda não implementada.');
+  // });
+
+  // Efeito ao rolar a página: mudar cor do navbar
+  window.addEventListener('scroll', function () {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+          navbar.classList.add('scrolled');
+      } else {
+          navbar.classList.remove('scrolled');
       }
   });
 });

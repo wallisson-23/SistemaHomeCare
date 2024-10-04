@@ -9,6 +9,7 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body>
@@ -18,7 +19,8 @@
         <nav class="navbar">
             <div class="navbar-container">
                 <div class="logo">
-                    <a href="#"><img src="logoiCare.jpg" alt="Logo iCare" style="max-width: 120px; margin-top: 5px;"></a>
+                    <a href="#"><img src="imagens/logoiCare.jpg" alt="Logo iCare"
+                            style="max-width: 120px; margin-top: 5px;"></a>
                 </div>
                 <ul class="nav-links" aria-label="Navegação principal">
                     <li><a href="#home">Início</a></li>
@@ -26,12 +28,13 @@
                     <li><a href="#funcionalidades-alternadas">Serviços</a></li>
                     <li><a href="#contact">Contato</a></li>
                 </ul>
-                <div class="navbar-buttons">
+                <!-- <div class="navbar-buttons">
                     <a href="#" class="login-btn" aria-label="Conectar-se" style="font-size: 14px; padding: 10px 15px;">
                         <span class="icon" style="font-size: 18px;">👤</span> Conecte-se
                     </a>
-                    <a href="#" class="cta-btn" aria-label="Comece agora!" style="font-size: 14px; padding: 10px 20px;">Comece agora!</a>
-                </div>
+                    <a href="contact" class="cta-btn" aria-label="Comece agora!"
+                        style="font-size: 14px; padding: 10px 20px;">Comece agora!</a>
+                </div> -->
             </div>
         </nav>
     </header>
@@ -42,19 +45,24 @@
             <div class="header-container">
                 <div class="header-content">
                     <h1>Plataforma de Gestão para Home Care</h1>
-                    <p>Gerencie pacientes, equipes e finanças de forma segura e eficiente com nossa plataforma avançada.</p>
+                    <p>Gerencie pacientes, equipes e finanças de forma segura e eficiente com nossa plataforma avançada.
+                    </p>
                     <div class="header-input">
-                        <label for="email-header" class="sr-only">Insira seu e-mail</label>
-                        <input type="email" id="email-header" placeholder="Insira seu e-mail" aria-label="Campo de e-mail">
-                        <button class="cta-btn">Iniciar Avaliação</button>
+                        <!-- <label for="email-header" class="sr-only">Insira seu e-mail</label> -->
+                        <!-- <input type="email" id="email-header" placeholder="Insira seu e-mail"
+                            aria-label="Campo de e-mail"> -->
+                       <a href="#contact"> <button class="cta-btn">Iniciar Avaliação</button></a>
                     </div>
                 </div>
                 <!-- Imagens -->
                 <div class="header-images">
-                    <img src="https://medicinasa.com.br/wp-content/uploads/2022/11/esteto-medico-digital.jpg" alt="Cuidador Home Care" class="main-image">
+                    <img src="https://medicinasa.com.br/wp-content/uploads/2022/11/esteto-medico-digital.jpg"
+                        alt="Cuidador Home Care" class="main-image">
                     <div class="small-images">
-                        <img src="https://maislaudo.com.br/wp-content/uploads/2019/12/home-care.jpg" alt="Paciente recebendo cuidados domiciliares" class="small-image">
-                        <img src="https://mv.com.br/storage/blog/07430920230417643d22bde9b59.png" alt="Equipe Médica" class="small-image">
+                        <img src="https://maislaudo.com.br/wp-content/uploads/2019/12/home-care.jpg"
+                            alt="Paciente recebendo cuidados domiciliares" class="small-image">
+                        <img src="https://mv.com.br/storage/blog/07430920230417643d22bde9b59.png" alt="Equipe Médica"
+                            class="small-image">
                     </div>
                 </div>
             </div>
@@ -62,41 +70,55 @@
 
         <!-- Seção Sobre -->
         <section id="about" class="sobre">
-            <h2>Conheça a solução desenvolvida na UCB para revolucionar o Home Care!</h2>
-            <p>Inspirada por relatos de familiares de estudantes da Universidade Católica de Brasília (UCB), nossa plataforma resolve os principais desafios do Home Care.</p>
-            <ul>
-                <li>Gerenciamento de escalas eficiente</li>
-                <li>Acompanhamento em tempo real dos pacientes</li>
-                <li>Compartilhamento seguro de informações</li>
-                <li>Automação de tarefas e acesso a relatórios</li>
-            </ul>
-            <button class="cta-btn">Cadastre-se agora</button>
+            <div class="sobre-container">
+                <div class="sobre-text">
+                    <h2>Conheça a solução desenvolvida na UCB para revolucionar o Home Care!</h2>
+                    <p>Inspirada por relatos de familiares de estudantes da Universidade Católica de Brasília (UCB),
+                        nossa plataforma resolve os principais desafios do Home Care.</p>
+                    <ul>
+                        <li>Gerenciamento de escalas eficiente</li>
+                        <li>Acompanhamento em tempo real dos pacientes</li>
+                        <li>Compartilhamento seguro de informações</li>
+                        <li>Automação de tarefas e acesso a relatórios</li>
+                    </ul>
+
+                   <a href="#contact"><button class="cta-btn">Fale conosco!</button></a> 
+                </div>
+                <div class="sobre-image">
+                    <img src="vecteezy_man-nurse-holding-clipboard-healthcare-workers-concept_31718397.png"
+                        alt="Imagem ilustrativa de Home Care">
+                </div>
+            </div>
         </section>
+
 
         <!-- Seção de Funcionalidades Alternadas -->
         <section id="funcionalidades-alternadas" class="features-section">
             <div class="container">
-                <h2>Funcionalidades</h2>
+                <h2>Serviços</h2>
 
                 <!-- Funcionalidade 1 -->
                 <div class="feature-item alternate-left">
                     <div class="text-content">
                         <h3>Facilidade em Gestão de Escalas dos Profissionais</h3>
-                        <p>Gerencie de forma eficiente as escalas dos seus profissionais, mantendo tudo organizado e acessível.</p>
+                        <p>Gerencie de forma eficiente as escalas dos seus profissionais, mantendo tudo organizado e
+                            acessível.</p>
                     </div>
                     <div class="image-content">
-                        <img src="https://img.icons8.com/ios-filled/150/000000/schedule.png" alt="Gestão de Escalas">
+                        <img src="imagens/gestão de escalas.jpg" alt="Gestão de Escalas">
                     </div>
                 </div>
 
                 <!-- Funcionalidade 2 -->
                 <div class="feature-item alternate-right">
                     <div class="image-content">
-                        <img src="https://img.icons8.com/ios-filled/150/000000/medical-doctor.png" alt="Informações de Saúde">
+                        <img src="https://img.icons8.com/ios-filled/150/000000/medical-doctor.png"
+                            alt="Informações de Saúde">
                     </div>
                     <div class="text-content">
                         <h3>Compartilhar Informações de Saúde do Paciente</h3>
-                        <p>Mantenha as informações de saúde dos pacientes acessíveis e compartilháveis em tempo real.</p>
+                        <p>Mantenha as informações de saúde dos pacientes acessíveis e compartilháveis em tempo real.
+                        </p>
                     </div>
                 </div>
 
@@ -104,17 +126,20 @@
                 <div class="feature-item alternate-left">
                     <div class="text-content">
                         <h3>Acompanhamento em Tempo Real dos Dados</h3>
-                        <p>Acompanhe o progresso dos pacientes e atualizações das informações clínicas em tempo real.</p>
+                        <p>Acompanhe o progresso dos pacientes e atualizações das informações clínicas em tempo real.
+                        </p>
                     </div>
                     <div class="image-content">
-                        <img src="https://img.icons8.com/ios-filled/150/000000/real-time-protection.png" alt="Acompanhamento em Tempo Real">
+                        <img src="imagens/acompanhamento.jpg"
+                            alt="Acompanhamento em Tempo Real">
                     </div>
                 </div>
 
                 <!-- Funcionalidade 4 -->
                 <div class="feature-item alternate-right">
                     <div class="image-content">
-                        <img src="https://img.icons8.com/ios-filled/150/000000/calendar.png" alt="Visualização de Agendamentos">
+                        <img src="https://img.icons8.com/ios-filled/150/000000/calendar.png"
+                            alt="Visualização de Agendamentos">
                     </div>
                     <div class="text-content">
                         <h3>Visualização de Agendamentos e Profissionais Alocados</h3>
@@ -126,42 +151,65 @@
                 <div class="feature-item alternate-left">
                     <div class="text-content">
                         <h3>Automatização de Processos Manuais e Protocolos</h3>
-                        <p>Automatize processos como protocolos ABEMID e NEAD, evoluções clínicas e o plano terapêutico.</p>
+                        <p>Automatize processos como protocolos ABEMID e NEAD, evoluções clínicas e o plano terapêutico.
+                        </p>
                     </div>
                     <div class="image-content">
-                        <img src="https://img.icons8.com/ios-filled/150/000000/automation.png" alt="Automatização de Processos">
+                        <img src="imagens/automatização.jpg"
+                            alt="Automatização de Processos">
                     </div>
                 </div>
 
                 <!-- Funcionalidade 6 -->
                 <div class="feature-item alternate-right">
                     <div class="image-content">
-                        <img src="https://img.icons8.com/ios-filled/150/000000/artificial-intelligence.png" alt="Inteligência Artificial Integrada">
+                        <img src="https://img.icons8.com/ios-filled/150/000000/artificial-intelligence.png"
+                            alt="Inteligência Artificial Integrada">
                     </div>
                     <div class="text-content">
                         <h3>Inteligência Artificial Integrada</h3>
-                        <p>Utilize inteligência artificial para otimizar o atendimento e os cuidados prestados aos pacientes.</p>
+                        <p>Utilize inteligência artificial para otimizar o atendimento e os cuidados prestados aos
+                            pacientes.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Seção de Contato -->
-        <section id="contact" class="contact-section">
-            <div class="contact-container">
-                <h2 class="contact-title">Entre em Contato</h2>
-                <form class="contact-form" action="#" method="POST" aria-label="Formulário de contato">
-                    <label for="name">Nome:</label>
-                    <input type="text" id="name" name="name" placeholder="Seu Nome" required>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Seu Email" required>
-
-                    <label for="message">Mensagem:</label>
-                    <textarea id="message" name="message" placeholder="Sua Mensagem" rows="5" required></textarea>
-
-                    <button type="submit">Enviar</button>
-                </form>
+        <section class="contact" id="contact">
+            <div class="heading">
+                <h1>Contato</h1>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-box">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>+55 61 99317-6228</p>
+                    </div>
+                    <div class="info-box">
+                        <i class="fas fa-envelope-open"></i>
+                        <p>icarehealthsystem@gmail.com</p>
+                    </div>
+                    <div class="info-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Brasília, DF</p>
+                    </div>
+                    <!-- <div class="info-box social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div> -->
+                </div>
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <form id="contact-form" action="">
+                        <input type="text" name="name" placeholder="Nome" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea name="message" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                        <input type="submit" value="Enviar" class="contact-button">
+                    </form>
+                </div>
             </div>
         </section>
     </main>
@@ -173,12 +221,13 @@
             <a href="#">Política de Privacidade</a>
             <a href="#">Suporte</a>
         </div>
-        <div class="footer-social">
-            <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png" alt="Facebook"></a>
-            <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram"></a>
-            <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn"></a>
-        </div>
-        <h3>Email: iCare.gestao@gmail.com</h3>
+        <!-- <div class="box-footer">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div> -->
+
         <p>&copy; 2024 iCare. Todos os direitos reservados.</p>
     </footer>
 
