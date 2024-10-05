@@ -79,3 +79,51 @@ function toggleMenu() {
     const navLinks = document.querySelector('.nav-links');
     navLinks.classList.toggle('active');
 }
+(function () {
+    emailjs.init('ZRx7Ga9NEBQSjUw5o');
+})();
+
+const contactForm = document.getElementById('contact-form');
+const feedbackElement = document.querySelector('.feedback-message');
+
+contactForm.addEventListener('submit', function (event) {
+    event.preventDefault(); // Evitar envio automático para testes
+
+    const name = this.name.value.trim();
+    const email = this.email.value.trim();
+    const message = this.message.value.trim();
+
+    // Validação dos campos
+    if (!name || !email || !message) {
+        feedbackElement.textContent = 'Por favor, preencha todos os campos.';
+        feedbackElement.classList.add('error'); // Adiciona classe de erro
+        feedbackElement.classList.remove('success');
+    } else if (!validateEmail(email)) {
+        feedbackElement.textContent = 'Por favor, insira um e-mail válido.';
+        feedbackElement.classList.add('error');
+        feedbackElement.classList.remove('success');
+    } else {
+        // Apenas envia a mensagem se a validação passar
+        emailjs.send('service_ofrlcgn', 'template_tsw57en', {
+            name: name,
+            email: email,
+            message: message
+        })
+        .then(function() {
+            feedbackElement.textContent = 'Mensagem enviada com sucesso!';
+            feedbackElement.classList.add('success'); // Adiciona classe de sucesso
+            feedbackElement.classList.remove('error');
+            contactForm.reset(); // Limpa o formulário após o envio
+        }, function(error) {
+            feedbackElement.textContent = 'Erro ao enviar a mensagem: ' + JSON.stringify(error);
+            feedbackElement.classList.add('error');
+            feedbackElement.classList.remove('success');
+        });
+    }
+});
+
+// Função de validação de e-mail
+function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+}

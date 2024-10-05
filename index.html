@@ -14,6 +14,12 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="icon" href="imagens/iCareicone.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init('ZRx7Ga9NEBQSjUw5o'); // Substitua YOUR_USER_ID pelo seu User ID do EmailJS
+        })();
+    </script>
 </head>
 
 <body>
@@ -204,21 +210,16 @@
                         <i class="fas fa-map-marker-alt"></i>
                         <p>Brasília, DF</p>
                     </div>
-                    <!-- <div class="info-box social">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                    </div> -->
                 </div>
                 <!-- Contact Form -->
                 <div class="contact-form">
-                    <form id="contact-form" action="">
+                    <form id="contact-form">
                         <input type="text" name="name" placeholder="Nome" required>
                         <input type="email" name="email" placeholder="Email" required>
                         <textarea name="message" placeholder="Escreva sua mensagem aqui..." required></textarea>
                         <input type="submit" value="Enviar" class="contact-button">
                     </form>
+                    <div class="feedback-message"></div>
                 </div>
             </div>
         </section>
