@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        /* Estilo da Seção */
+.pricing {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+}
+
+.pricing h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilo dos Planos */
+.plans {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.plan {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.plan:hover {
+    transform: scale(1.05);
+}
+
+.plan h3 {
+    font-size: 1.5em;
+    color: #007bff;
+}
+
+.plan .price {
+    font-size: 2em;
+    color: #333;
+    margin: 15px 0;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+}
+
+.plan ul li {
+    font-size: 1em;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.plan button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.plan button:hover {
+    background-color: #0056b3;
+}
+
+/* Destaque para o Plano Intermediário */
+.plan.highlight {
+    border: 2px solid #007bff;
+    transform: scale(1.05);
+}
+
+    </style>
+    <section class="pricing">
+        <h2>Escolha seu Plano</h2>
+        <div class="plans">
+            <!-- Plano Básico -->
+            <div class="plan">
+                <h3>Básico</h3>
+                <p class="price">R$ 500/mês</p>
+                <ul>
+                    <li>Suporte básico</li>
+                    <li>Cuidados semanais</li>
+                    <li>Avaliação mensal</li>
+                </ul>
+                <button>Escolher Plano</button>
+            </div>
+    
+            <!-- Plano Intermediário -->
+            <div class="plan highlight">
+                <h3>Intermediário</h3>
+                <p class="price">R$ 800/mês</p>
+                <ul>
+                    <li>Suporte 24h</li>
+                    <li>Cuidados 3x por semana</li>
+                    <li>Avaliação quinzenal</li>
+                </ul>
+                <button>Escolher Plano</button>
+            </div>
+    
+            <!-- Plano Premium -->
+            <div class="plan">
+                <h3>Premium</h3>
+                <p class="price">R$ 1.200/mês</p>
+                <ul>
+                    <li>Suporte prioritário 24h</li>
+                    <li>Cuidados diários</li>
+                    <li>Avaliação semanal</li>
+                    <li>Consultas médicas inclusas</li>
+                </ul>
+                <button>Escolher Plano</button>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
