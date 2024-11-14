@@ -577,7 +577,9 @@ form textarea {
     letter-spacing: 1px;
     cursor: pointer;
 }
-
+.insta{
+    background-color: #002a55;
+}
 
 /* Footer */
 footer {
@@ -597,8 +599,9 @@ footer a:hover {
     color: #ffd633;
 }
 
-.box-footer {
+.box-footer i {
     color: #ffd633;
+   font-size: xx-large;
 }
 
 /* Para telas menores que 1024px */
